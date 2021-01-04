@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:linkedin/pages/job_page.dart';
 import 'package:linkedin/pages/message_page.dart';
+import 'package:linkedin/pages/my_page.dart';
 import 'package:linkedin/pages/qr_code_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -107,7 +108,15 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: GestureDetector(
-                    onTap: (){},
+                    onTap: (){
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: 
+                          (context){
+                           return MyPage();
+                          }
+                          ),
+                      ); 
+                    },
                     child: Image(
                       image: AssetImage("assets/avatar.png")
                       ),
