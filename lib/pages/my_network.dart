@@ -28,8 +28,14 @@ class _MyNetworkPageState extends State<MyNetworkPage> {
             },
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+        onPressed: null,
+        tooltip: 'Update Text',
+        child: Icon(Icons.person_add_alt),
       ),
-    );
+    ),
+      );
+    
   }
 
   Widget _appBar() {
