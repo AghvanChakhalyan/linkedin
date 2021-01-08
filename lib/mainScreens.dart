@@ -79,7 +79,7 @@ class _MainScreenState extends State<MainScreen> {
               children: [
                 Divider(),
                 Icon(
-                  Icons.supervisor_account_outlined,
+                  Icons.group_rounded,
                   color: Colors.grey,
                 ),
               ],
@@ -90,7 +90,7 @@ class _MainScreenState extends State<MainScreen> {
                   color: Colors.black,
                 ),
                 Icon(
-                  Icons.people_alt_rounded,
+                  Icons.group,
                   color: Colors.black,
                 ),
               ],

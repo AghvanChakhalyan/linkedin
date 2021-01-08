@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +26,7 @@ class _MyPageState extends State<MyPage> {
       child: Container(
         margin: EdgeInsets.all(15),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -145,6 +144,61 @@ class _MyPageState extends State<MyPage> {
                   ),
                 ),
               ],
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Name Surname",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                  Text("Junior Flutter developer"),
+                  Text("DigitalPomegranate Gyumri Armenia"),
+                  Row(children: [
+                    Text("Armenia"),
+                    Text("48 canditats", style: TextStyle(color: Colors.blue))
+                  ]),
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(2),
+              margin: EdgeInsets.only(top: 5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(width: 0.1),
+                ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Search new roll"),
+                          Text(
+                            "Cm.all info",
+                            style: TextStyle(color: Colors.blue),
+                          ),
+                        ],
+                      ),
+                      GestureDetector(
+                        child: Icon(
+                          Icons.edit,
+                        ),
+                      )
+                    ],
+                  ),
+                  Divider(),
+                  Row(children: [
+                    Icon(Icons.remove_red_eye),
+                    Text("Any text"),
+                  ])
+                ],
+              ),
             ),
           ],
         ),
